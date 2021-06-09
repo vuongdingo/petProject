@@ -1,0 +1,79 @@
+.popup-menu {
+	position: absolute;
+	width: 210px;
+	height: 232px;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 6px;
+}
+.popup-head {
+	height: 110px;
+	overflow: hidden;
+}
+.popup-close {
+	margin-top: 5px;
+	margin-right: 5px;
+	text-align: right;
+	cursor: pointer;
+	margin-top: 5px;
+	margin-right: 5px;
+	text-align: right;
+	cursor: pointer;
+	img {
+		width: 24px;
+		height: 24px;
+	}
+}
+.popup-content {
+	overflow: hidden;
+	margin: 0 16px;
+}
+.popup-loginform {
+	margin-top: 35px;
+	height: 102px;
+	padding-top: 16px;
+}
+.popup-errorMsg {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 4px;
+	height: 14px;
+	line-height: 14px;
+	color: #ff1525;
+	text-align: left;
+	visibility: hidden;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.popup-submit {
+	outline: none;
+	height: 38px;
+	border: none;
+	line-height: 38px;
+	border-radius: 4px;
+	background-color: #fd5553;
+	color: #fff;
+}
+.popup-forgetPassword {
+	margin-top: 8px;
+	height: 17px;
+}
+.popup-bottom {
+	border-top: 1px solid #f4f4f4;
+	height: 38px;
+	line-height: 38px;
+	margin: 0 16px;
+}
+.popup-register {
+	color: #fd5553;
+}
+.popup-logo {
+	img {
+		margin-top: -8px;
+		width: 60px;
+		height: 60px;
+	}
+}

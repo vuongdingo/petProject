@@ -1,0 +1,68 @@
+<div class="ScrollView-root-1KhMW TaskRegion-scroll-1JQVH ">
+    <mat-drawer-container>
+    <div class="TaskRegion-navigator-2AhfT">
+        <table cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td class="TaskRegion-projectName-1NS_w">[prj_today]</td>
+                    <td class="TaskRegion-menu-2PouQ TaskRegion-sortMenu-1o6h6"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="TaskRegion-content-36bI_">
+        <div class="StatisticsRegion-root-1SZbE">
+            <table class="StatisticsRegion-statictisTable-2X2P_" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>
+                                <div class="StatisticsItem-value-2j5On" style="color: rgb(253, 85, 83);">0</div>
+                                <div class="StatisticsItem-title-3ylMv small-font" style="color: rgb(174, 174, 174);">
+                                    [prj_estimate_time]</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <div class="StatisticsItem-value-2j5On" style="color: rgb(253, 85, 83);">0</div>
+                                <div class="StatisticsItem-title-3ylMv small-font" style="color: rgb(174, 174, 174);">
+                                    [prj_unfinished_task]</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <div class="StatisticsItem-value-2j5On" style="color: rgb(253, 85, 83);">0</div>
+                                <div class="StatisticsItem-title-3ylMv small-font" style="color: rgb(174, 174, 174);">
+                                    [prj_spent_time]</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <div class="StatisticsItem-value-2j5On" style="color: rgb(253, 85, 83);">0</div>
+                                <div class="StatisticsItem-title-3ylMv small-font" style="color: rgb(174, 174, 174);">
+                                    [prj_finished_task]</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <app-create-new-task></app-create-new-task>
+        <div>
+            <ul (click)="drawer.toggle()">Task 1</ul>
+        </div>
+        <div class="TaskRegion-finishedTasks-30myC">
+            <div class="TaskRegion-title-2InIs">
+                <div><span class="small-font">[tsk_show_finished]</span><span
+                        class="TaskRegion-indicator-3yc_y "></span></div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <mat-drawer #drawer class="TaskDetailRegion-root-14V2l TaskDetailRegion-shown-2T0Cd" mode="side" position="end">
+
+        <app-task-details class="task-app-details"></app-task-details>
+    
+    </mat-drawer>
+</mat-drawer-container>
+</div>
