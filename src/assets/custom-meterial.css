@@ -1,4 +1,4 @@
-.custom-dialog-container .mat-dialog-container {
+.custom-dialog-container .mat-dialog-container  {
     position: absolute;
     top: 0;
     left: 0;
@@ -7,40 +7,52 @@
     height: 100%;
     min-height: 650px;
     min-width: 1000px;
-}
+  }
+
+
+
 
 .mat-datepicker-content-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1060;
-    display: none;
-    max-width: 276px;
-    padding: 1px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    letter-spacing: normal;
-    line-break: auto;
-    line-height: 1.42857143;
-    text-align: left;
-    text-align: start;
-    text-decoration: none;
-    text-shadow: none;
-    text-transform: none;
-    white-space: normal;
-    word-break: normal;
-    word-spacing: normal;
-    word-wrap: normal;
-    font-size: 14px;
-    background-color: #ffffff;
-    background-clip: padding-box;
-    border: 1px solid #cccccc;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 250px;
+  left: 300px;
+  z-index: 1060;
+  display: none;
+  max-width: 356px;
+  padding: 1px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: 14px;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.mat-calendar-content {
-    padding: 9px 14px;
+.mat-calendar-content{
+  padding: 9px 14px;
+}
+
+.cdk-overlay-pane .mat-datepicker-popup{
+  
+}
+
+.cdk-live-announcer-element 
+.cdk-visually-hidden{
+  background-color: rebeccapurple;
 }

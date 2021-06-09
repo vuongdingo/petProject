@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ShareCountService } from './services/share-count.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TaskDetailSideNaveServiceService } from './providers/services/task-details-side-nave-service.service';
+import { MockService } from './providers/services/mock-api/mock.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,7 +16,7 @@ import { TaskDetailSideNaveServiceService } from './providers/services/task-deta
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [ShareCountService, TaskDetailSideNaveServiceService],
+  providers: [ShareCountService, TaskDetailSideNaveServiceService, MockService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

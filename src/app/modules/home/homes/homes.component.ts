@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MockService } from 'src/app/providers/services/mock-api/mock.service';
 
 
 @Component({
@@ -8,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private mock: MockService) { }
 
   ngOnInit(): void {
+    
   }
 
 

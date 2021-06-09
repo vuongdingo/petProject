@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './home/home.component';
 import { HomesComponent } from './homes/homes.component';
 import { ProjectRegionComponent } from './project-region/project-region.component';
 import { DateComponent } from './project-region/date/date.component';
@@ -15,10 +14,10 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { MockService } from 'src/app/providers/services/mock-api/mock.service';
 
 @NgModule({
   declarations: [
-    HomeComponent,
     HomesComponent,
     ProjectRegionComponent,
     DateComponent,
@@ -32,6 +31,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatDatepickerModule,
     MatInputModule,
     MatSidenavModule
-  ]
+  ],
+  providers: []
 })
 export class HomeModule { }

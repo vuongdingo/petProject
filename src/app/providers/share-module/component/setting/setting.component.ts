@@ -1,6 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { LoginComponent } from '../login/login.component';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-setting',
@@ -10,8 +9,7 @@ import { LoginComponent } from '../login/login.component';
 export class SettingComponent implements OnInit {
 
   constructor(public dialogRef: MatDialogRef<SettingComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any,
-    public dialog: MatDialog) { }
+    @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(): void {
   }
@@ -19,15 +17,5 @@ export class SettingComponent implements OnInit {
   close(){
     this.dialogRef.close();
   }
-
-  toogleLogin(): void {
-
-    const dialogRef = this.dialog.open(LoginComponent, {
-      panelClass: 'custom-dialog-container',
-      data: { name: 'alo', animal: 'dog' },
-      disableClose: false
-    });
-  }
-
 
 }
