@@ -22,6 +22,7 @@ import { StatsComponent } from './component/stats/stats.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
 import { DatePickerPopupComponent } from './component/create-new-task/date-picker-popup/date-picker-popup.component';
+import { ListTaskComponent } from './component/list-task/list-task.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { DatePickerPopupComponent } from './component/create-new-task/date-picke
     CreateNewTaskComponent,
     SettingComponent,
     StatsComponent,
-    DatePickerPopupComponent
+    DatePickerPopupComponent,
+    ListTaskComponent
   ],
   imports: [
     MatCommonModule,
@@ -58,7 +60,8 @@ import { DatePickerPopupComponent } from './component/create-new-task/date-picke
     HeaderComponent, 
     LoginComponent, 
     TaskDetailsComponent, 
-    CreateNewTaskComponent
+    CreateNewTaskComponent,
+    ListTaskComponent
   ]
 })
 export class ShareModuleModule { }

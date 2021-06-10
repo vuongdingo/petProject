@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatDatepicker } from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-create-new-task',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateNewTaskComponent implements OnInit {
 
+  @ViewChild('picker') datePicker: MatDatepicker<any>;
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  activePicker(){
+    this.datePicker.open();
   }
 
 }

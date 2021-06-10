@@ -16,14 +16,17 @@
                 <td class="TaskNewItem-separator-2s1Pf">
                     <div></div>
                 </td>
-                <td class="TaskNewItem-project-V6XLj" style="display: table-cell;">
+                <td class="TaskNewItem-project-V6XLj" style="display: table-cell;"  (click)="activePicker()">
                     <div class="TaskNewItem-popoverAnchor-3K6Xj"><span style="background-color: rgb(174, 189, 195);">
                         </span>
                     </div>
                 </td>
                 <td class="TaskNewItem-deadline-39npX">
-                    <span matDatepickerToggleIcon style="background-image: url(/assets/img/project-someday.png);">
-
+                    <span  style="background-image: url(/assets/img/project-someday.png);">
+                        <mat-datepicker-toggle matSuffix [for]="picker">
+                            <mat-datepicker #picker></mat-datepicker>
+                            <input matInput [matDatepicker]="picker">
+                        </mat-datepicker-toggle>
                     </span>
 
                 </td>
@@ -31,6 +34,6 @@
         </tbody>
     </table>
 
-    <app-date-picker-popup></app-date-picker-popup>
+    <!-- <app-date-picker-popup></app-date-picker-popup> -->
 
 </div>

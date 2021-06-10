@@ -48,9 +48,7 @@
             </table>
         </div>
         <app-create-new-task></app-create-new-task>
-        <div>
-            <ul (click)="drawer.toggle()">Task 1</ul>
-        </div>
+        
         <div class="TaskRegion-finishedTasks-30myC">
             <div class="TaskRegion-title-2InIs">
                 <div><span class="small-font">[tsk_show_finished]</span><span
@@ -58,6 +56,8 @@
             </div>
             <div></div>
         </div>
+
+        <app-list-task></app-list-task>
     </div>
     <mat-drawer #drawer class="TaskDetailRegion-root-14V2l TaskDetailRegion-shown-2T0Cd" mode="side" position="end">
 
